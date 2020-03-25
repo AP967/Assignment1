@@ -4,6 +4,8 @@ import {Row,Col, Card, CardImg, CardText, CardBody,
     CardTitle, Breadcrumb, BreadcrumbItem,Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+import CommentForm from './CommentForm';
+
 const RenderDish = (props) => {
     return (
 
@@ -28,6 +30,7 @@ const RenderComments = (props) => {
                     </Row>
                 </Row>
             )}
+            <CommentForm />
         </Container>
     );
 }
